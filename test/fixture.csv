@@ -1,0 +1,3 @@
+Service Name,Port Number,Transport Protocol,Description,Assignee,Contact,Registration Date,Modification Date,Reference,Service Code,Known Unauthorized Uses,Assignment Notes
+,1023,tcp,Reserved,,,,,,,,
+test,1024,tcp,Test service,[Assignee],[Contact],2015-07-01,2015-07-01,[RFC-reference],000000,Unauthorized use by IANA,Test entry
