@@ -14,18 +14,18 @@ In the above example `ports` is an array containg objects with following format.
 
 ```javascript
 {
-	'Service Name': 'test',
-	'Port Number': '1024',
-	'Transport Protocol': 'tcp',
-	'Description': 'Test service',
-	'Assignee': '[Assignee]',
-	'Contact': '[Contact]',
-	'Registration Date': '2015-07-01',
-	'Modification Date': '2015-07-01',
-	'Reference': '[RFC-reference]',
-	'Service Code': '000000',
-	'Known Unauthorized Uses': 'Unauthorized use by IANA',
-	'Assignment Notes': 'Test entry'
+	ServiceName: 'test',
+	PortNumber: '1024',
+	TransportProtocol: 'tcp',
+	Description: 'Test service',
+	Assignee: '[Assignee]',
+	Contact: '[Contact]',
+	RegistrationDate: '2015-07-01',
+	ModificationDate: '2015-07-01',
+	Reference: '[RFC-reference]',
+	ServiceCode: '000000',
+	KnownUnauthorizedUses: 'Unauthorized use by IANA',
+	AssignmentNotes: 'Test entry'
 }
 ```
 

@@ -11,10 +11,11 @@ var fetch = function(callback) {
 		csvParse(body, { columns: true }, function(err, data) {
 			if(err) return callback(err);
 
-			data.forEach(function(entry) {
-				Object.keys(entry).forEach(function(key) {
-					if(entry[key] === '') delete entry[key];
-				});
+			data = data.map(function(entry) {
+				return Object.keys(entry).reduce(function(acc, key) {
+					if(entry[key] !== '') acc[key.replace(/\s+/g, '')] = entry[key];
+					return acc;
+				}, {});
 			});
 
 			callback(null, data);
